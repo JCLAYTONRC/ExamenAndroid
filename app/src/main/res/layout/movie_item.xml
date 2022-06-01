@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_cardview"
+    android:layout_marginStart="@dimen/minimum_margin"
+    android:layout_marginTop="@dimen/default_margin"
+    android:layout_marginEnd="@dimen/minimum_margin"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroud_cardview">
+
+        <ImageView
+            android:id="@+id/movie_poster"
+            android:layout_width="@dimen/width_image"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/img_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/minimum_margin"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@color/text_color"
+            app:layout_constraintStart_toEndOf="@id/movie_poster"
+            app:layout_constraintTop_toTopOf="@id/movie_poster"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/minimum_margin"
+            tools:text="Titulo Pelicula"/>
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/text_color"
+            android:maxLines="@integer/maxlines_overview"
+            app:layout_constraintStart_toEndOf="@id/movie_poster"
+            app:layout_constraintTop_toBottomOf="@id/movie_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Descripcion de la pelicula"
+            android:layout_margin="@dimen/minimum_margin"/>
+
+        <TextView
+            android:id="@+id/movie_release_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toBottomOf="@id/movie_poster"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/minimum_margin"
+            tools:text="yyyy/mm/dd" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

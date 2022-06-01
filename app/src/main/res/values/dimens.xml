@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="minimum_margin">8dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="height_cardview">200dp</dimen>
+    <dimen name="width_image">150dp</dimen>
+    <dimen name="height_image">200dp</dimen>
+    <dimen name="elevation_default">8dp</dimen>
+    <dimen name="photo_load_size">88dp</dimen>
+    <dimen name="photo_load_size_max">200dp</dimen>
+</resources>

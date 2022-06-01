@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Examen Juan Ramos</string>
+    <string name="img_photo">Imagen de la pelicula</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombre_epleado">Nombre empleado</string>
+    <string name="helper_requerido">Requerido</string>
+    <string name="numero_empleado">Numero de empleado</string>
+    <string name="telefono_empleado">Telefono</string>
+    <string name="email_empleado">Email</string>
+    <string name="direccion_empleado">Direccion</string>
+    <string name="seleccione_para_insertar_imagen">Seleccione para insertar imagen</string>
+    <string name="ingrese_una_foto">Ingrese una foto</string>
+    <string name="seleccione_una_imagen_para_subir_a_firebase">Seleccione una imagen para subir a firebase</string>
+    <string name="seleccione_imagen">Seleccione Imagen</string>
+    <string name="subir_imagen">Subir Imagen</string>
+    <string name="agregar_empleado">Agregar Empleado</string>
+    <string name="menu_save">Save</string>
+    <string name="mensaje_exitoso_guardar_empleado">Agregado correctamente</string>
+</resources>

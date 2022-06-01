@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginStart="@dimen/minimum_margin"
+    android:layout_marginTop="@dimen/default_margin"
+    android:layout_marginEnd="@dimen/minimum_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroud_cardview">
+
+        <ImageView
+            android:id="@+id/imgContact"
+            android:layout_width="@dimen/width_image"
+            android:layout_height="@dimen/width_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/minimum_margin"
+            android:layout_marginTop="@dimen/minimum_margin"
+            android:layout_marginBottom="@dimen/minimum_margin"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/imgContact"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/text_color"
+            tools:text="NOMBRE DE LA PERSONA"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginStart="@dimen/minimum_margin"
+            android:layout_marginEnd="@dimen/minimum_margin"
+            />
+
+        <TextView
+            android:id="@+id/tvnoempleado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/imgContact"
+            android:textColor="@color/text_color"
+            android:text="No. Empleado:"
+            app:layout_constraintTop_toBottomOf="@id/tvname"
+            android:layout_marginStart="@dimen/minimum_margin"
+            android:layout_marginTop="@dimen/minimum_margin"
+            android:textAppearance="?attr/textAppearanceBody2"
+            />
+
+        <TextView
+            android:id="@+id/tvNumeroEmpleado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvnoempleado"
+            app:layout_constraintTop_toBottomOf="@id/tvname"
+            android:layout_marginStart="@dimen/minimum_margin"
+            android:layout_marginTop="@dimen/minimum_margin"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/text_color"
+            tools:text="6546265"/>
+
+        <TextView
+            android:id="@+id/tvtel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/imgContact"
+            app:layout_constraintTop_toBottomOf="@id/tvnoempleado"
+            android:layout_marginStart="@dimen/minimum_margin"
+            android:layout_marginTop="@dimen/minimum_margin"
+            android:textAppearance="?attr/textAppearanceBody2"
+            tools:text="Celular:"
+            android:textColor="@color/text_color"
+            />
+
+        <TextView
+            android:id="@+id/tvCelularEmpleado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvtel"
+            app:layout_constraintTop_toBottomOf="@id/tvnoempleado"
+            android:layout_marginStart="@dimen/minimum_margin"
+            android:layout_marginTop="@dimen/minimum_margin"
+            android:textAppearance="?attr/textAppearanceBody2"
+            tools:text="+5245454552"
+            android:textColor="@color/text_color"
+            />
+
+        <TextView
+            android:id="@+id/tvemail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/imgContact"
+            app:layout_constraintTop_toBottomOf="@id/tvtel"
+            android:layout_marginStart="@dimen/minimum_margin"
+            android:layout_marginTop="@dimen/minimum_margin"
+            android:textAppearance="?attr/textAppearanceBody2"
+            tools:text="Email:"
+            android:textColor="@color/text_color"
+            />
+
+        <TextView
+            android:id="@+id/tvEmailEmpleado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvemail"
+            app:layout_constraintTop_toBottomOf="@id/tvCelularEmpleado"
+            android:layout_marginStart="@dimen/minimum_margin"
+            android:layout_marginTop="@dimen/minimum_margin"
+            android:textAppearance="?attr/textAppearanceBody2"
+            tools:text="jclaytonrc@gmail.com"
+            android:textColor="@color/text_color"
+            />
+        <TextView
+            android:id="@+id/tvdireccion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/imgContact"
+            app:layout_constraintTop_toBottomOf="@id/tvemail"
+            android:layout_marginStart="@dimen/minimum_margin"
+            android:layout_marginTop="@dimen/minimum_margin"
+            android:textAppearance="?attr/textAppearanceBody2"
+            tools:text="Direccion:"
+            android:textColor="@color/text_color"
+            />
+
+        <TextView
+            android:id="@+id/tvDireccionEmpleado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvdireccion"
+            app:layout_constraintTop_toBottomOf="@id/tvemail"
+            android:layout_marginStart="@dimen/minimum_margin"
+            android:layout_marginTop="@dimen/minimum_margin"
+            android:textAppearance="?attr/textAppearanceBody2"
+            tools:text="Av Carlos Frias 856 Colonia Azcapotzalco Guadalupe, Jalisco"
+            android:textColor="@color/text_color"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
